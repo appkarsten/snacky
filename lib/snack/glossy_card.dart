@@ -138,7 +138,7 @@ class GlossyCardHome extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(top: 55),
+                          padding: const EdgeInsets.only(top: 50),
                           child: StyledButtonHome(text: 'Add to order'),
                         ),
                       ],
