@@ -181,7 +181,7 @@ class RecommendCard extends StatelessWidget {
               Positioned(
                   top: 100,
                   child: Container(
-                    height: MediaQuery.of(context).size.height - 110,
+                    height: MediaQuery.of(context).size.height - 100,
                     width: MediaQuery.of(context).size.width,
                     color: Color(0xFF2F2B22),
                   )),
