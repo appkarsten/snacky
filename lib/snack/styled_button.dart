@@ -89,20 +89,30 @@ class StyledButtonHome extends StatelessWidget {
             ),
           ],
           gradient: LinearGradient(
-            colors: [Color(0xFFE98DE5), Color(0xFFBC8CE2)],
+            colors: [Color(0xFFBB8DE1), Color(0xFFBC8CE2)],
           ),
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: Colors.white24),
+          border: Border.all(color: Colors.white12),
         ),
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
-          child: Text(
-            text,
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontSize: 16,
-              letterSpacing: -1,
+          padding: const EdgeInsets.all(0),
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(
+                  color: Color(0xFFA660B5).withValues(alpha: 0.4), width: 1.5),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Text(
+                text,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                  letterSpacing: -1,
+                ),
+              ),
             ),
           ),
         ));
