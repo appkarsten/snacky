@@ -170,7 +170,7 @@ class RecommendCard extends StatelessWidget {
   void _showBottomSheet(BuildContext context) {
     showBottomSheet(
       context: context,
-      backgroundColor: Colors.black.withValues(alpha: 0.5),
+      backgroundColor: Colors.black.withValues(alpha: 0.2),
       builder: (context) => SizedBox(
         height: double.infinity,
         width: double.infinity,
@@ -185,7 +185,8 @@ class RecommendCard extends StatelessWidget {
                     width: MediaQuery.of(context).size.width,
                     color: Color(0xFF2F2B22),
                   )),
-              Positioned(top: 0, child: Assets.images.cupCat.image(width: 400)),
+              Positioned(
+                  top: -35, child: Assets.images.cupCat.image(width: 400)),
               Positioned(
                 top: 130,
                 right: 16,
@@ -200,13 +201,14 @@ class RecommendCard extends StatelessWidget {
                     ),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 5),
-                      child: Icon(Icons.close),
+                      child: Icon(Icons.close,
+                          color: Colors.white.withValues(alpha: 0.5)),
                     ),
                   ),
                 ),
               ),
               Positioned(
-                top: 310,
+                top: 280,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
                   child: GlossyCardDetail(),
